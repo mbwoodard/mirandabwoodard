@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #88b966}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #9ba2b1}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #c58853}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #4a505d}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #9ba2b1; min-height: 16.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #d65562}
+    span.s1 {color: #b85dd5}
+    span.s2 {color: #d65562}
+    span.s3 {color: #c58853}
+    span.s4 {color: #88b966}
+    span.s5 {color: #9ba2b1}
+    span.s6 {color: #4a505d}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!doctype <span class="s1">html</span>&gt;</p>
+<p class="p2">&lt;<span class="s2">html</span> <span class="s3">lang</span>=<span class="s4">"en"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;<span class="s2">head</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;<span class="s2">meta</span> <span class="s3">charset</span>=<span class="s4">"UTF-8"</span> /&gt;</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span>&lt;</span><span class="s2">meta</span><span class="s5"> </span><span class="s3">name</span><span class="s5">=</span>"viewport"<span class="s5"> </span><span class="s3">content</span><span class="s5">=</span>"width=device-width, initial-scale=1"<span class="s5"> /&gt;</span></p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;<span class="s2">title</span>&gt;Miranda Woodard&lt;/<span class="s2">title</span>&gt;</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span>&lt;</span><span class="s2">meta</span><span class="s5"> </span><span class="s3">name</span><span class="s5">=</span>"description"<span class="s5"> </span><span class="s3">content</span><span class="s5">=</span>"Networking • Security • Systems"<span class="s5"> /&gt;</span></p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;<span class="s2">style</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">:root</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s3">--bg</span>: <span class="s3">#fbfaf7</span>;<span class="Apple-converted-space">        </span><span class="s6">/* warm white */</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s3">--text</span>: <span class="s3">#1f2937</span>;<span class="Apple-converted-space">      </span><span class="s6">/* charcoal */</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s3">--muted</span>: <span class="s3">#6b7280</span>; <span class="Apple-converted-space">    </span><span class="s6">/* slate */</span></p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span>--card<span class="s5">: </span>#ffffff<span class="s5">;</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s3">--line</span>: rgba(<span class="s3">31</span>,<span class="s3">41</span>,<span class="s3">55</span>,.<span class="s3">10</span>);</p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">--accent</span><span class="s5">: </span><span class="s3">#2f6b4f</span><span class="s5">;<span class="Apple-converted-space">    </span></span>/* muted forest */</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span>* { <span class="s4">box-sizing</span>: border-box; }</p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s2">html</span>, <span class="s2">body</span> { <span class="s4">height</span>: <span class="s3">100%</span>; }</p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s2">body</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">margin</span>:<span class="s3">0</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">font-family</span>: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, <span class="s4">"Apple Color Emoji"</span>,<span class="s4">"Segoe UI Emoji"</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">background</span>: var(--bg);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">color</span>: var(--text);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">line-height</span>: <span class="s3">1.55</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s2">a</span> { <span class="s4">color</span>: inherit; <span class="s4">text-decoration</span>: none; }</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s2">a</span><span class="s3">:hover</span><span class="s5"> { </span>text-decoration<span class="s5">: underline; </span>text-underline-offset<span class="s5">: </span><span class="s3">3px</span><span class="s5">; }</span></p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.wrap</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">max-width</span>: <span class="s3">980px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">margin</span>: <span class="s3">0</span> auto;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">padding</span>: <span class="s3">28px</span> <span class="s3">18px</span> <span class="s3">64px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s2">header</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">position</span>: sticky;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">top</span>: <span class="s3">0</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">z-index</span>: <span class="s3">10</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">backdrop-filter</span>: blur(<span class="s3">10px</span>);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">background</span>: color-mix(in srgb, var(--bg) <span class="s3">88%</span>, transparent);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">border-bottom</span>: <span class="s3">1px</span> solid var(--line);</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.nav</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">max-width</span>: <span class="s3">980px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">margin</span>: <span class="s3">0</span> auto;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">padding</span>: <span class="s3">12px</span> <span class="s3">18px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">display</span>: flex;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">align-items</span>: center;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">justify-content</span>: space-between;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">gap</span>: <span class="s3">12px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.brand</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">display</span>:flex;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">flex-direction</span>: column;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">gap</span>: <span class="s3">2px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s3">.brand</span><span class="s5"> </span><span class="s2">strong</span><span class="s5">{ </span>font-size<span class="s5">: </span><span class="s3">14px</span><span class="s5">; </span>letter-spacing<span class="s5">: .</span><span class="s3">02em</span><span class="s5">; }</span></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.brand</span> <span class="s2">span</span>{ <span class="s4">font-size</span>: <span class="s3">12px</span>; <span class="s4">color</span>: var(--muted); }</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.links</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">display</span>:flex;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">gap</span>: <span class="s3">14px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">font-size</span>: <span class="s3">13px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">color</span>: var(--muted);</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.hero</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">padding</span>: <span class="s3">44px</span> <span class="s3">0</span> <span class="s3">24px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">display</span>:grid;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">gap</span>: <span class="s3">14px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s2">h1</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">margin</span>:<span class="s3">0</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">font-size</span>: clamp(<span class="s3">32px</span>, <span class="s3">5vw</span>, <span class="s3">48px</span>);</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span>letter-spacing<span class="s5">: -</span><span class="s3">0.02em</span><span class="s5">;</span></p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">      </span></span>.tagline<span class="s5">{</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">margin</span>:<span class="s3">0</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">font-size</span>: <span class="s3">16px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">color</span>: var(--muted);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">max-width</span>: <span class="s3">65ch</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">      </span></span>.pillrow<span class="s5">{</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">display</span>:flex;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">flex-wrap</span>: wrap;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">gap</span>: <span class="s3">10px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">padding-top</span>: <span class="s3">6px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.pill</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">font-size</span>: <span class="s3">12px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">color</span>: var(--text);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">border</span>: <span class="s3">1px</span> solid var(--line);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">background</span>: color-mix(in srgb, var(--card) <span class="s3">92%</span>, transparent);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">padding</span>: <span class="s3">7px</span> <span class="s3">10px</span>;</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span>border-radius<span class="s5">: </span><span class="s3">999px</span><span class="s5">;</span></p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.pill</span> <span class="s2">b</span>{ <span class="s4">color</span>: var(--accent); <span class="s4">font-weight</span>: <span class="s3">600</span>; }</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.grid</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">display</span>:grid;</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span>grid-template-columns<span class="s5">: </span><span class="s3">1</span><span class="s5">fr;</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">gap</span>: <span class="s3">14px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">margin-top</span>: <span class="s3">18px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s1">@media</span> (<span class="s4">min-width</span>: <span class="s3">880px</span>){</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s3">.grid</span>{ <span class="s4">grid-template-columns</span>: <span class="s3">1.2</span>fr .<span class="s3">8</span>fr; }</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.card</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">background</span>: var(--card);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">border</span>: <span class="s3">1px</span> solid var(--line);</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span>border-radius<span class="s5">: </span><span class="s3">16px</span><span class="s5">;</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">padding</span>: <span class="s3">18px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">box-shadow</span>: <span class="s3">0</span> <span class="s3">10px</span> <span class="s3">28px</span> rgba(<span class="s3">31</span>,<span class="s3">41</span>,<span class="s3">55</span>,.<span class="s3">05</span>);</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s2">h2</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">margin</span>: <span class="s3">0</span> <span class="s3">0</span> <span class="s3">10px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">font-size</span>: <span class="s3">14px</span>;</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span>letter-spacing<span class="s5">: .</span><span class="s3">08em</span><span class="s5">;</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">text-transform</span>: uppercase;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">color</span>: var(--muted);</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.bio</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">margin</span>:<span class="s3">0</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">font-size</span>: <span class="s3">15px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">max-width</span>: <span class="s3">70ch</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.list</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">margin</span>: <span class="s3">10px</span> <span class="s3">0</span> <span class="s3">0</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">padding</span>: <span class="s3">0</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">list-style</span>: none;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">display</span>: grid;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">gap</span>: <span class="s3">10px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.item</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">border-top</span>: <span class="s3">1px</span> solid var(--line);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">padding-top</span>: <span class="s3">10px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">      </span></span>.item:first-child<span class="s5">{</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">border-top</span>: none;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">padding-top</span>: <span class="s3">0</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">      </span></span>.item<span class="s5"> </span>.title<span class="s5">{</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">display</span>:flex;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">align-items</span>: baseline;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">justify-content</span>: space-between;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">gap</span>: <span class="s3">10px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.item</span> <span class="s2">strong</span>{ <span class="s4">font-size</span>: <span class="s3">14px</span>; }</p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.item</span> small{ <span class="s4">color</span>: var(--muted); <span class="s4">font-size</span>: <span class="s3">12px</span>; }</p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.item</span> <span class="s2">p</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">margin</span>: <span class="s3">6px</span> <span class="s3">0</span> <span class="s3">0</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">color</span>: var(--muted);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">font-size</span>: <span class="s3">13px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">      </span></span>.section<span class="s5">{</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">margin-top</span>: <span class="s3">22px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.footer</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">margin-top</span>: <span class="s3">40px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">padding-top</span>: <span class="s3">18px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">border-top</span>: <span class="s3">1px</span> solid var(--line);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">color</span>: var(--muted);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">font-size</span>: <span class="s3">12px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">display</span>:flex;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">justify-content</span>: space-between;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">gap</span>: <span class="s3">12px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">flex-wrap</span>: wrap;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span><span class="s3">.btn</span>{</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">display</span>:inline-flex;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">align-items</span>:center;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">gap</span>: <span class="s3">8px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">border</span>: <span class="s3">1px</span> solid var(--line);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">background</span>: var(--card);</p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">padding</span>: <span class="s3">10px</span> <span class="s3">12px</span>;</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span>border-radius<span class="s5">: </span><span class="s3">12px</span><span class="s5">;</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">font-size</span>: <span class="s3">13px</span>;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">      </span></span>.btn:hover<span class="s5">{</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span>text-decoration<span class="s5">:none;</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span><span class="s4">border-color</span>: color-mix(in srgb, var(--accent) <span class="s3">35%</span>, var(--line));</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/<span class="s2">style</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;/<span class="s2">head</span>&gt;</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;<span class="s2">body</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;<span class="s2">header</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"nav"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"brand"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">strong</span>&gt;Miranda Woodard&lt;/<span class="s2">strong</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">span</span>&gt;Networking • Security • Systems&lt;/<span class="s2">span</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">nav</span> <span class="s3">class</span>=<span class="s4">"links"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">a</span> <span class="s3">href</span>=<span class="s4">"#about"</span>&gt;About&lt;/<span class="s2">a</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">a</span> <span class="s3">href</span>=<span class="s4">"#skills"</span>&gt;Skills&lt;/<span class="s2">a</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">a</span> <span class="s3">href</span>=<span class="s4">"#projects"</span>&gt;Projects&lt;/<span class="s2">a</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">a</span> <span class="s3">href</span>=<span class="s4">"#contact"</span>&gt;Contact&lt;/<span class="s2">a</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s2">nav</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/<span class="s2">header</span>&gt;</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;<span class="s2">main</span> <span class="s3">class</span>=<span class="s4">"wrap"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;<span class="s2">section</span> <span class="s3">class</span>=<span class="s4">"hero"</span> <span class="s3">id</span>=<span class="s4">"top"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">h1</span>&gt;Hi, I’m Miranda.&lt;/<span class="s2">h1</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">p</span> <span class="s3">class</span>=<span class="s4">"tagline"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>I build stable systems — at home and in life. I’m a networking student focused on practical infrastructure,</p>
+<p class="p2"><span class="Apple-converted-space">          </span>home network security, and resilient system design.</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s2">p</span>&gt;</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span>&lt;</span><span class="s2">div</span><span class="s5"> </span><span class="s3">class</span><span class="s5">=</span>"pillrow"<span class="s5"> </span><span class="s3">aria-label</span><span class="s5">=</span>"Highlights"<span class="s5">&gt;</span></p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"pill"</span>&gt;&lt;<span class="s2">b</span>&gt;Focus:&lt;/<span class="s2">b</span>&gt; Networking + Security&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"pill"</span>&gt;&lt;<span class="s2">b</span>&gt;Also:&lt;/<span class="s2">b</span>&gt; Linux + Systems&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"pill"</span>&gt;&lt;<span class="s2">b</span>&gt;Style:&lt;/<span class="s2">b</span>&gt; Calm, clean, dependable&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"pillrow"</span>&gt;</p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">          </span></span>&lt;!-- Replace links below with your real ones --&gt;</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">          </span>&lt;</span><span class="s2">a</span><span class="s5"> </span><span class="s3">class</span><span class="s5">=</span>"btn"<span class="s5"> </span><span class="s3">href</span><span class="s5">=</span>"mailto:you@example.com"<span class="s5">&gt;Email&lt;/</span><span class="s2">a</span><span class="s5">&gt;</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">          </span>&lt;</span><span class="s2">a</span><span class="s5"> </span><span class="s3">class</span><span class="s5">=</span>"btn"<span class="s5"> </span><span class="s3">href</span><span class="s5">=</span>"https://www.linkedin.com/in/YOUR-LINKEDIN"<span class="s5"> </span><span class="s3">target</span><span class="s5">=</span>"_blank"<span class="s5"> </span><span class="s3">rel</span><span class="s5">=</span>"noreferrer"<span class="s5">&gt;LinkedIn&lt;/</span><span class="s2">a</span><span class="s5">&gt;</span></p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">a</span> <span class="s3">class</span>=<span class="s4">"btn"</span> <span class="s3">href</span>=<span class="s4">"#projects"</span>&gt;View projects&lt;/<span class="s2">a</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/<span class="s2">section</span>&gt;</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"grid"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">section</span> <span class="s3">class</span>=<span class="s4">"card"</span> <span class="s3">id</span>=<span class="s4">"about"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">h2</span>&gt;About&lt;/<span class="s2">h2</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">p</span> <span class="s3">class</span>=<span class="s4">"bio"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>I build stable systems — at home and in life.&lt;<span class="s2">br</span> /&gt;&lt;<span class="s2">br</span> /&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>I’m a networking student focused on practical infrastructure, home network security, and resilient system design.</p>
+<p class="p2"><span class="Apple-converted-space">            </span>I care about clarity, security, and building things that simply work.&lt;<span class="s2">br</span> /&gt;&lt;<span class="s2">br</span> /&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>Outside of the lab, I restore an A-frame home, design intentional spaces, and plant trees for the long term.&lt;<span class="s2">br</span> /&gt;&lt;<span class="s2">br</span> /&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>Currently completing my degree and expanding into network security and systems administration.</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;/<span class="s2">p</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s2">section</span>&gt;</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">aside</span> <span class="s3">class</span>=<span class="s4">"card"</span> <span class="s3">id</span>=<span class="s4">"skills"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">h2</span>&gt;Skills&lt;/<span class="s2">h2</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">ul</span> <span class="s3">class</span>=<span class="s4">"list"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s2">li</span> <span class="s3">class</span>=<span class="s4">"item"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"title"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s2">strong</span>&gt;Networking&lt;/<span class="s2">strong</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s2">small</span>&gt;Cisco • VLANs • STP • EtherChannel&lt;/<span class="s2">small</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">p</span>&gt;Hands-on labs, troubleshooting, and clean configurations.&lt;/<span class="s2">p</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;/<span class="s2">li</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s2">li</span> <span class="s3">class</span>=<span class="s4">"item"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"title"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s2">strong</span>&gt;Linux / Systems&lt;/<span class="s2">strong</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s2">small</span>&gt;Red Hat coursework&lt;/<span class="s2">small</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">p</span>&gt;Command line, fundamentals, and practical administration.&lt;/<span class="s2">p</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;/<span class="s2">li</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s2">li</span> <span class="s3">class</span>=<span class="s4">"item"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"title"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s2">strong</span>&gt;Home Network Security&lt;/<span class="s2">strong</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s2">small</span>&gt;Segmentation • monitoring&lt;/<span class="s2">small</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">p</span>&gt;Practical security posture and “make it boring” reliability.&lt;/<span class="s2">p</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;/<span class="s2">li</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s2">li</span> <span class="s3">class</span>=<span class="s4">"item"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"title"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s2">strong</span>&gt;Programming&lt;/<span class="s2">strong</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span>&lt;<span class="s2">small</span>&gt;Python fundamentals&lt;/<span class="s2">small</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">p</span>&gt;Small scripts and tooling to support systems work.&lt;/<span class="s2">p</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;/<span class="s2">li</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;/<span class="s2">ul</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s2">aside</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">      </span>&lt;</span><span class="s2">section</span><span class="s5"> </span><span class="s3">class</span><span class="s5">=</span>"section card"<span class="s5"> </span><span class="s3">id</span><span class="s5">=</span>"projects"<span class="s5">&gt;</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">h2</span>&gt;Projects&lt;/<span class="s2">h2</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">ul</span> <span class="s3">class</span>=<span class="s4">"list"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">li</span> <span class="s3">class</span>=<span class="s4">"item"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"title"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">strong</span>&gt;Generative AI in Networking&lt;/<span class="s2">strong</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">small</span>&gt;presentation + report&lt;/<span class="s2">small</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s2">p</span>&gt;Research + communication focused: explaining impact and practical use cases.&lt;/<span class="s2">p</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;/<span class="s2">li</span>&gt;</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">li</span> <span class="s3">class</span>=<span class="s4">"item"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"title"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">strong</span>&gt;Home Lab + Network Hardening&lt;/<span class="s2">strong</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">small</span>&gt;ongoing&lt;/<span class="s2">small</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s2">p</span>&gt;Segmentation, device monitoring, and reducing noisy IoT behavior.&lt;/<span class="s2">p</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;/<span class="s2">li</span>&gt;</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">li</span> <span class="s3">class</span>=<span class="s4">"item"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"title"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">strong</span>&gt;Simple Security for Your Home Network&lt;/<span class="s2">strong</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">              </span>&lt;<span class="s2">small</span>&gt;planned JL training&lt;/<span class="s2">small</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;<span class="s2">p</span>&gt;A practical, member-friendly session: passwords, Wi-Fi, updates, phishing, and basic segmentation.&lt;/<span class="s2">p</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;/<span class="s2">li</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s2">ul</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/<span class="s2">section</span>&gt;</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">      </span>&lt;</span><span class="s2">section</span><span class="s5"> </span><span class="s3">class</span><span class="s5">=</span>"section card"<span class="s5"> </span><span class="s3">id</span><span class="s5">=</span>"contact"<span class="s5">&gt;</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">h2</span>&gt;Contact&lt;/<span class="s2">h2</span>&gt;</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span>&lt;</span><span class="s2">p</span><span class="s5"> </span><span class="s3">class</span><span class="s5">=</span>"bio"<span class="s5"> </span><span class="s3">style</span><span class="s5">=</span>"margin-bottom: 10px;"<span class="s5">&gt;</span></p>
+<p class="p2"><span class="Apple-converted-space">          </span>Best way to reach me is email. I’m happy to connect about networking, security, systems, or collaboration.</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s2">p</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"pillrow"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;<span class="s2">a</span> <span class="s3">class</span>=<span class="s4">"btn"</span> <span class="s3">href</span>=<span class="s4">"mailto:you@example.com"</span>&gt;you@example.com&lt;/<span class="s2">a</span>&gt;</p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">          </span>&lt;</span><span class="s2">a</span><span class="s5"> </span><span class="s3">class</span><span class="s5">=</span>"btn"<span class="s5"> </span><span class="s3">href</span><span class="s5">=</span>"https://www.linkedin.com/in/YOUR-LINKEDIN"<span class="s5"> </span><span class="s3">target</span><span class="s5">=</span>"_blank"<span class="s5"> </span><span class="s3">rel</span><span class="s5">=</span>"noreferrer"<span class="s5">&gt;LinkedIn&lt;/</span><span class="s2">a</span><span class="s5">&gt;</span></p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/<span class="s2">section</span>&gt;</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;<span class="s2">div</span> <span class="s3">class</span>=<span class="s4">"footer"</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">span</span>&gt;© &lt;<span class="s2">span</span> <span class="s3">id</span>=<span class="s4">"y"</span>&gt;&lt;/<span class="s2">span</span>&gt; Miranda Woodard&lt;/<span class="s2">span</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;<span class="s2">span</span>&gt;Built on Cloudflare Pages&lt;/<span class="s2">span</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/<span class="s2">div</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/<span class="s2">main</span>&gt;</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;<span class="s2">script</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>document.getElementById(<span class="s4">"y"</span>).textContent = <span class="s1">new</span> Date().getFullYear();</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/<span class="s2">script</span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;/<span class="s2">body</span>&gt;</p>
+<p class="p6"><span class="s5">&lt;/</span>html<span class="s5">&gt;</span></p>
+</body>
+</html>
